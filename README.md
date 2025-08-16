@@ -1,6 +1,4 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+
 
 # ∇∆∇∆∇ Interactive LP
 
@@ -8,19 +6,20 @@ An interactive music player NFT for the album **∇∆∇∆∇** by **ⱩЯɎƧ
 
 ## 🎵 Features
 
-- **Interactive Vinyl Player** with spinning animation and tonearm
-- **9-Track Album** with real audio playback
-- **100 PFP Visual Artifacts** to explore
-- **Audio-Synced Visual Effects** that respond to music (colorama)
-- **Responsive Design** for desktop and mobile
-- **Touch-Friendly Controls** for mobile devices
+- **Interactive Vinyl Player** with spinning animation, tonearm, and enhanced glow effects
+- **9-Track Album** with real audio playback and automatic track progression
+- **100 PFP Visual Artifacts** in JPG format for exploration
+- **Audio-Synced Video Background** with dynamic blur effects (15px-25px range)
+- **Enhanced Visual Effects** including animated title glitch and vinyl glow pulsing
+- **Responsive Design** optimized for desktop and mobile devices
+- **Touch-Friendly Controls** with seamless mobile experience
 
 ## 🎧 How to Use
 
-1. **Click/Tap the Play Button** to start music playback
-2. **Navigate Tracks** using Previous/Next buttons
+1. **Click/Tap the Play Button** to start music playback and video background
+2. **Navigate Tracks** using Previous/Next buttons (video continues seamlessly)
 3. **Explore PFP Gallery** using the navigation arrows
-4. **Watch the Visuals** - background grid changes colors with music
+4. **Watch the Visuals** - video blur changes with music intensity and grid responds to audio
 
 ## 🌐 Browser Requirements
 
@@ -37,12 +36,12 @@ An interactive music player NFT for the album **∇∆∇∆∇** by **ⱩЯɎƧ
 
 ## 🎨 Visual Effects
 
-- **Vinyl Record** spins when playing
+- **Vinyl Record** spins when playing with enhanced pink glow effects
 - **Tonearm** moves to playing position
-- **Background Grid** changes colors based on audio frequencies:
-  - Bass frequencies → Blue/Cyan
-  - Treble frequencies → Yellow/Green
-  - Pink base color shifts dynamically
+- **Video Background** with audio-synced blur (heavy audio = less blur, light audio = more blur)
+- **Background Grid** responds to music with subtle breathing effects
+- **Title Animation** features glitch effects with staggered timing
+- **Vinyl Glow** pulses and animates with dual-layer effects
 
 ## 📁 File Structure
 
@@ -52,11 +51,12 @@ triangles/
 ├── assets/
 │   ├── js/
 │   │   └── app.js     # Application logic
-│   ├── fonts/         # Local font files
 │   ├── audio/         # 9 MP3 tracks
-│   └── images/
-│       ├── logo.png   # Album cover
-│       └── pfps/      # 100 JPG PFP images
+│   ├── images/
+│   │   ├── logo.png   # Album cover
+│   │   └── pfps/      # 100 JPG PFP images
+│   └── video/
+│       └── visualizer.mp4  # Audio-synced background video
 └── README.md
 ```
 
@@ -73,11 +73,12 @@ This application is designed to be **OBJKT-compliant**:
 
 ## 🎯 Technical Details
 
-- **Vanilla HTML/CSS/JavaScript** - no frameworks
-- **Web Audio API** for frequency analysis
-- **CSS Custom Properties** for dynamic colorama effects
-- **Local Fonts** - Orbitron and Rajdhani embedded
-- **Responsive Grid Layout** - works on all screen sizes
+- **Vanilla HTML/CSS/JavaScript** - no frameworks or external dependencies
+- **Video Background** with HTML5 video and CSS filter blur effects
+- **Audio-Synced Visualizer** using requestAnimationFrame for smooth performance
+- **CSS Custom Properties** for dynamic effects and responsive design
+- **System Font Fallbacks** for optimal OBJKT compatibility
+- **Responsive Grid Layout** - works on all screen sizes and devices
 
 ---
 
